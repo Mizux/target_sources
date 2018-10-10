@@ -6,3 +6,8 @@ target_link_libraries(App
 if (BUILD_TESTING)
   add_test(NAME App_UT COMMAND App)
 endif()
+
+install(TARGETS App
+ EXPORT plop-targets
+ RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
