@@ -1,6 +1,6 @@
-add_library(A "")
-target_sources(A
-  PRIVATE src/A.cc include/a/A.h
+add_library(A
+  include/a/A.h
+  src/A.cc
 )
 target_include_directories(A PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
