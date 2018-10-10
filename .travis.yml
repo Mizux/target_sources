@@ -1,0 +1,25 @@
+os: linux
+cache: false
+sudo: required
+language: bash
+services: docker
+env:
+  matrix:
+  - DISTRO=alpine
+  - DISTRO=centos-7
+  - DISTRO=debian-9
+  - DISTRO=ubuntu-14.04
+  - DISTRO=ubuntu-16.04
+  - DISTRO=ubuntu-18.04
+
+install: true
+
+before_script:
+- docker --version
+- make --version
+
+script:
+- make docker_${DISTRO}
+- make configure_${DISTRO}
+- make build_${DISTRO}
+- make test_${DISTRO}
