@@ -1,11 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 
-include(CTest)
-
 project(Plop VERSION 1.0 LANGUAGES CXX)
 
+include(CTest)
 set(CMAKE_VERBOSE_MAKEFILE ON)
-
 option(BUILD_SHARED_LIBS "Build shared libraries(.so or .dyld)." ON)
 
 add_subdirectory(libA)
