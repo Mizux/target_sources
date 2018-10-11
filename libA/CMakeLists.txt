@@ -1,4 +1,5 @@
-add_library(A
+add_library(A "")
+target_sources(A PRIVATE
   include/a/A.h
   src/A.cc
 )
