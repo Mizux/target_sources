@@ -1,6 +1,6 @@
 add_executable(App src/main.cpp)
 target_link_libraries(App
-  PRIVATE a::A ho::HO
+  PRIVATE a::A b::B ho::HO
 )
 
 if (BUILD_TESTING)
