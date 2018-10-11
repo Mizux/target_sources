@@ -8,3 +8,9 @@ $ cmake -H. -Bbuild
 $ cmake --build build
 ```
 
+# QtCreator
+`libA` use only `PRIVATE` sources while `libB` use `PUBLIC` for headers.
+
+![qtcreator integration](qtcreator.png)
+
+We can see for `App`, `libB` headers are listed.
