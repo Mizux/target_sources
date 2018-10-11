@@ -4,7 +4,7 @@ target_sources(B
     src/B.cc
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/b/B.h>
-    $<INSTALL_INTERFACE:includei/b/B.h>
+    $<INSTALL_INTERFACE:include/b/B.h>
 )
 set_target_properties(B PROPERTIES
     PUBLIC_HEADER "include/b/B.h")
