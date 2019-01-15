@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Mizux/plop.svg?branch=master)](https://travis-ci.com/Mizux/plop)
+[![Build Status](https://travis-ci.org/Mizux/target_sources.svg?branch=master)](https://travis-ci.org/Mizux/target_sources)
 # Introduction
 Test C++/CMake IDE integration with `INTERFACE` library and library having `target_sources( PUBLIC ....`
 
